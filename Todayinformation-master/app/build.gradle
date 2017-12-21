@@ -6,8 +6,8 @@ android {
         applicationId "com.jinghua.todayinformation"
         minSdkVersion 14
         targetSdkVersion 23
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "2.0.2.12"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
     }
@@ -24,6 +24,7 @@ android {
         // but continue the build even when errors are found:
         abortOnError false
     }
+
     useLibrary 'org.apache.http.legacy'
 }
 
