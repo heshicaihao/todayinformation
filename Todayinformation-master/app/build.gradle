@@ -39,7 +39,9 @@ dependencies {
     compile 'com.google.code.gson:gson:1.7.1'
     compile 'com.loopj.android:android-async-http:1.4.8'
     compile 'org.greenrobot:eventbus:3.0.0'
-    compile group: 'com.nineoldandroids', name: 'library', version: '2.4.0'
-    compile group: 'org.jsoup', name: 'jsoup', version: '1.7.2'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'org.jsoup:jsoup:1.7.2'
+    compile 'com.umeng.analytics:analytics:5.4.2'
+
 
 }
