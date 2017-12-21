@@ -34,7 +34,6 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:text="当前版本V1.0.0"
             android:textColor="#969696"
             android:textSize="@dimen/sp45" />
     </RelativeLayout>
@@ -110,7 +109,7 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="@dimen/dp15"
             android:layout_toRightOf="@+id/image1"
-            android:text="联系开发人员:18616742809"
+            android:text="联系开发人员:13544222632"
             android:textColor="#787878"
             android:textSize="@dimen/sp45" />
     </RelativeLayout>

@@ -5,6 +5,7 @@ import java.io.File;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.net.Uri;
 import android.os.Bundle;
@@ -69,7 +70,7 @@ public class SettingsActivity extends SuperActivity implements OnClickListener{
 		wel.setOnClickListener(this);
 		
 		cache.setText(FileUtils.getDiskCacheSize(mContext));
-		version.setText("当前版本V" + GetVersion(mContext));
+		version.setText("V " + getVersion());
 	}
 
 	@Override
@@ -210,14 +211,30 @@ public class SettingsActivity extends SuperActivity implements OnClickListener{
      * @param context
      * @return
      */
-    public static String GetVersion(Context context) {
+//    public static String GetVersion(Context context) {
+//		try {
+//			PackageInfo manager = context.getPackageManager().getPackageInfo(
+//					context.getPackageName(), 0);
+//			return manager.versionName;
+//		} catch (NameNotFoundException e) {
+//			return "Unknown";
+//		}
+//	}
+
+	/**
+	 * 获取版本号
+	 * @return 当前应用的版本号
+	 */
+	public String getVersion() {
 		try {
-			PackageInfo manager = context.getPackageManager().getPackageInfo(
-					context.getPackageName(), 0);
-			return manager.versionName;
-		} catch (NameNotFoundException e) { 
-			return "Unknown";  
-		} 
+			PackageManager manager = this.getPackageManager();
+			PackageInfo info = manager.getPackageInfo(this.getPackageName(), 0);
+			String version = info.versionName;
+			return version;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return "";
+		}
 	}
 
 }
