@@ -29,7 +29,7 @@
         android:paddingLeft="@dimen/dp20"
         android:paddingRight="@dimen/dp20" >
 
-        <com.heshicaihao.ui.component.CircleImageView
+        <com.heshicaihao.todayinformation.widget.CircleImageView
             android:id="@+id/image"
             android:layout_width="@dimen/dp116"
             android:layout_height="@dimen/dp116"

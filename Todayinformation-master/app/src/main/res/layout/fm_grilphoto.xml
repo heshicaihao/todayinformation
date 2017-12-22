@@ -11,7 +11,7 @@
         android:layout_height="@dimen/dp180"
         layout="@layout/include_title_head" />
 
-    <com.heshicaihao.ui.component.fastscroll.FastScrollView
+    <com.heshicaihao.todayinformation.widget.fastscroll.FastScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginLeft="@dimen/dp20"
@@ -29,6 +29,6 @@
             android:scrollbars="none"
             android:splitMotionEvents="false"
             ptr:ptrAnimationStyle="flip" />
-    </com.heshicaihao.ui.component.fastscroll.FastScrollView>
+    </com.heshicaihao.todayinformation.widget.fastscroll.FastScrollView>
 
 </LinearLayout>

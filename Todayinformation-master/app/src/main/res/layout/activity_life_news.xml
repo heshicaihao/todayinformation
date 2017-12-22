@@ -15,7 +15,7 @@
             android:layout_height="@dimen/dp160"
             layout="@layout/include_title_head" />
 
-        <com.heshicaihao.ui.component.PagerSlidingTabStrip
+        <com.heshicaihao.todayinformation.widget.PagerSlidingTabStrip
             android:id="@+id/tabs"
             android:layout_width="match_parent"
             android:layout_height="@dimen/dp150"

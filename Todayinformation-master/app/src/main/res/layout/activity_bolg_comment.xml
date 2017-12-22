@@ -24,7 +24,7 @@
         ptr:ptrAnimationStyle="flip" >
     </com.handmark.pulltorefresh.library.PullToRefreshListView>
 
-    <com.heshicaihao.ui.component.ErrorHintView
+    <com.heshicaihao.todayinformation.widget.ErrorHintView
         android:id="@+id/hintView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

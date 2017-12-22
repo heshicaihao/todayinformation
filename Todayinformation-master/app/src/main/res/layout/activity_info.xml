@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp160" />
 
-    <com.heshicaihao.ui.component.pulltozoomview.PullToZoomScrollViewEx
+    <com.heshicaihao.todayinformation.widget.pulltozoomview.PullToZoomScrollViewEx
         android:id="@+id/scroll_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
