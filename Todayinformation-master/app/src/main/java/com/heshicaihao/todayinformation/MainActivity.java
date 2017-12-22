@@ -39,7 +39,7 @@ import com.heshicaihao.todayinformation.utils.LogUtil;
 /**
  * 承载所有信息的主界面
  * 
- * @author zhou.ni 2015年3月16日
+ * @author heshicaihao 2015年3月16日
  */
 public class MainActivity extends SuperFragmentActivity implements OnClickListener{
 	

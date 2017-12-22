@@ -3,7 +3,7 @@ package com.heshicaihao.todayinformation.bean;
 /**
  * 每一条手机图片
  * 
- * @author zhou.ni 2015年5月5日
+ * @author heshicaihao 2015年5月5日
  */
 public class PhonePhotoItem extends SuperBean {
 

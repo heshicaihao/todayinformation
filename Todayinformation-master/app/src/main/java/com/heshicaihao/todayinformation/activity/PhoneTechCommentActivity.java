@@ -38,7 +38,7 @@ import com.heshicaihao.todayinformation.utils.MD5Utils;
 /**
  * 科技评论
  * 
- * @author zhou.ni 2015年5月21日
+ * @author heshicaihao 2015年5月21日
  */
 public class PhoneTechCommentActivity extends SuperActivity {
 	

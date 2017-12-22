@@ -20,7 +20,7 @@ import com.heshicaihao.todayinformation.utils.Utils;
 /**
  * 设置界面
  * 
- * @author zhou.ni 2015年3月16日
+ * @author heshicaihao 2015年3月16日
  */
 public class SettingsActivity extends SuperActivity implements OnClickListener{
 

@@ -33,7 +33,7 @@ import com.heshicaihao.todayinformation.utils.JsonUtils;
 /**
  * 游戏详情界面
  * 
- * @author zhou.ni 2015年5月17日
+ * @author heshicaihao 2015年5月17日
  */
 public class GameDetailActivity extends SuperActivity {
 	

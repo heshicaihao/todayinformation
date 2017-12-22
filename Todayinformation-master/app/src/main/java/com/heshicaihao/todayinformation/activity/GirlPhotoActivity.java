@@ -36,7 +36,7 @@ import com.heshicaihao.todayinformation.utils.LogUtil;
 /**
  * 美女写真界面
  * 
- * @author zhou.ni  2015年3月18日
+ * @author heshicaihao  2015年3月18日
  */
 public class GirlPhotoActivity extends SuperActivity implements OnClickListener{
 	

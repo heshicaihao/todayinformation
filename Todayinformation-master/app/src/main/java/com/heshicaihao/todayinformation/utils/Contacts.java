@@ -3,7 +3,7 @@ package com.heshicaihao.todayinformation.utils;
 /**
  * 存放一些全局变量
  * 
- * @author zhou.ni 2015年3月16日
+ * @author heshicaihao 2015年3月16日
  */
 public class Contacts {
 

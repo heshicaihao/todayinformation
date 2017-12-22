@@ -6,7 +6,7 @@ import java.util.concurrent.Executors;
 /**
  * 线程池管理工具类
  * 
- * @author zhou.ni 2015年4月29日
+ * @author heshicaihao 2015年4月29日
  */
 public class ThreadPoolManager {
 	private ExecutorService service;

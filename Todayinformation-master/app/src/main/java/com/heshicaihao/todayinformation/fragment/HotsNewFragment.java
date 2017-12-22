@@ -34,7 +34,7 @@ import com.heshicaihao.todayinformation.utils.LogUtil;
 /**
  * 最新的新闻资讯碎片
  * 
- * @author zhou.ni 2015年3月18日
+ * @author heshicaihao 2015年3月18日
  */
 public class HotsNewFragment extends SuperFragment {
 	

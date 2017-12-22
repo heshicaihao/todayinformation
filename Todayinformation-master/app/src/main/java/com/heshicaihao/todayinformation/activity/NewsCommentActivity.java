@@ -36,7 +36,7 @@ import com.heshicaihao.todayinformation.utils.AsyncHttpUtil;
 /**
  * 新闻评论
  * 
- * @author zhou.ni 2015年5月18日
+ * @author heshicaihao 2015年5月18日
  */
 public class NewsCommentActivity extends SuperActivity {
 	

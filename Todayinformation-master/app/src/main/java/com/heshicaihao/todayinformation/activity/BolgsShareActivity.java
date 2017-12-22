@@ -18,7 +18,7 @@ import com.heshicaihao.todayinformation.fragment.HotsBolgLayout;
 /**
  * 博客分享
  * 
- * @author zhou.ni 2015年3月17日
+ * @author heshicaihao 2015年3月17日
  */
 public class BolgsShareActivity extends SuperActivity implements OnClickListener{
 	

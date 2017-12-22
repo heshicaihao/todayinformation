@@ -22,7 +22,7 @@ import java.util.List;
 /**
  * 欢迎界面
  *
- * @author zhou.ni 2015年4月13日
+ * @author heshicaihao 2015年4月13日
  */
 public class WelcomeActivity extends SuperActivity {
     private ViewPager introductVp;                        // 介绍页面

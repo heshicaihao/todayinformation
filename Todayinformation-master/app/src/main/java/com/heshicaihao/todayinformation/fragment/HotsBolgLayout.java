@@ -45,7 +45,7 @@ import com.heshicaihao.todayinformation.utils.DateUtils;
 /**
  * 最新博客
  * 
- * @author zhou.ni 2015年5月17日
+ * @author heshicaihao 2015年5月17日
  */
 public class HotsBolgLayout extends RelativeLayout{
 	

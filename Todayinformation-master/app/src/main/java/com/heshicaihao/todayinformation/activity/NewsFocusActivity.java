@@ -44,7 +44,7 @@ import com.heshicaihao.todayinformation.utils.LogUtil;
 /**
  * 新闻焦点
  * 
- * @author zhou.ni 2015年3月17日
+ * @author heshicaihao 2015年3月17日
  */
 public class NewsFocusActivity extends SuperActivity {
 	

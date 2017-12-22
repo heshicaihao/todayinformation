@@ -11,7 +11,7 @@ import android.widget.LinearLayout;
 /**
  * 与Viewpager配合使用
  * 
- * @author zhou.ni 2015年4月25日
+ * @author heshicaihao 2015年4月25日
  */
 public class ViewPagerItem extends LinearLayout {
 

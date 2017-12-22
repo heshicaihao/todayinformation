@@ -28,7 +28,7 @@ import org.greenrobot.eventbus.EventBus;
 /**
  * 所有的fragment都继承于它
  *
- * @author zhou.ni 2015年2月1日
+ * @author heshicaihao 2015年2月1日
  */
 public abstract class SuperFragment extends Fragment implements RetryNetwork, PwdErrorListener, OnTouchListener, IBackEventStrategy {
     private static final String TAG = "SuperFragment";

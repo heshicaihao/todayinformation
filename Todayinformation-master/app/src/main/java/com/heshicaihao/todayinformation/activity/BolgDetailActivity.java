@@ -37,7 +37,7 @@ import com.heshicaihao.todayinformation.utils.AsyncHttpUtil;
 /**
  * 博客详情
  * 
- * @author zhou.ni 2015年5月17日
+ * @author heshicaihao 2015年5月17日
  */
 public class BolgDetailActivity extends SuperActivity implements OnClickListener{
 

@@ -2,7 +2,7 @@ package com.heshicaihao.todayinformation.bean;
 
 /**
  * 
- * @author zhou.ni 2015年5月24日
+ * @author heshicaihao 2015年5月24日
  */
 public class LifeNews extends SuperBean {
 	/**

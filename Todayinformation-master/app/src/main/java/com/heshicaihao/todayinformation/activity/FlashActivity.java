@@ -14,7 +14,7 @@ import com.heshicaihao.todayinformation.utils.SharedpreferncesUtil;
 
 /**
  * 启动界面
- * @author zhou.ni 2015年4月13日
+ * @author heshicaihao 2015年4月13日
  */
 public class FlashActivity extends SuperActivity {
 

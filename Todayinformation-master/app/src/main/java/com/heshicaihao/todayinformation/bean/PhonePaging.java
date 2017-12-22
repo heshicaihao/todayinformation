@@ -3,7 +3,7 @@ package com.heshicaihao.todayinformation.bean;
 /**
  * 手机分页返回值
  * 
- * @author zhou.ni 2015年5月5日
+ * @author heshicaihao 2015年5月5日
  */
 public class PhonePaging extends SuperBean {
 

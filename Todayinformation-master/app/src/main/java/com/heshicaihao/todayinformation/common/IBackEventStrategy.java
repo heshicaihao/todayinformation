@@ -3,7 +3,7 @@ package com.heshicaihao.todayinformation.common;
 /**
  * 对硬件返回按钮事件进行处理的策略接口 需要自行对返回按钮事件进行处理的fragment需要实现此接口
  * 
- * @author zhou.ni 2015年4月6日
+ * @author heshicaihao 2015年4月6日
  */
 public interface IBackEventStrategy {
 	/**

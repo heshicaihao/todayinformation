@@ -38,7 +38,7 @@ import com.heshicaihao.todayinformation.utils.JsonUtils;
 /**
  * 查看美女图片详情
  * 
- * @author zhou.ni 2015年4月25日
+ * @author heshicaihao 2015年4月25日
  */
 public class GrilDetailActivity extends SuperActivity implements OnClickListener{
 

@@ -3,7 +3,7 @@ package com.heshicaihao.todayinformation.bean;
 /**
  * 博客评论
  * 
- * @author zhou.ni 2015年5月17日
+ * @author heshicaihao 2015年5月17日
  */
 public class BolgComment extends SuperBean{
 

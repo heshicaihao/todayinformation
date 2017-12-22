@@ -8,7 +8,7 @@ import android.view.MotionEvent;
 /**
  * 插入控件的viewpager
  * 
- * @author zhou.ni 2015年4月8日
+ * @author heshicaihao 2015年4月8日
  */
 public class SuperViewPager extends ViewPager {
 

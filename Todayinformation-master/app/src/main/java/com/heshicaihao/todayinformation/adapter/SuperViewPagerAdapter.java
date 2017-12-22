@@ -10,7 +10,7 @@ import android.view.View;
 /**
  * 滑动的ViewPager
  * 
- * @author zhou.ni 2015年4月7日
+ * @author heshicaihao 2015年4月7日
  */
 public class SuperViewPagerAdapter extends PagerAdapter {
 

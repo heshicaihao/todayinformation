@@ -13,7 +13,7 @@ import com.heshicaihao.todayinformation.R;
 /**
  * 意见反馈
  * 
- * @author zhou.ni 2015年4月16日
+ * @author heshicaihao 2015年4月16日
  */
 public class FeedBackActivity extends SuperActivity implements OnClickListener{
 	

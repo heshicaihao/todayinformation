@@ -44,7 +44,7 @@ import com.heshicaihao.todayinformation.utils.MD5Utils;
 /**
  * 手机美图
  * 
- * @author zhou.ni 2015年5月5日
+ * @author heshicaihao 2015年5月5日
  */
 public class PhonePhotoFragment extends SuperFragment {
 

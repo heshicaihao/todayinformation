@@ -36,7 +36,7 @@ import com.heshicaihao.todayinformation.utils.MD5Utils;
 /**
  * 手机图片详情界面
  * 
- * @author zhou.ni 2015年5月9日
+ * @author heshicaihao 2015年5月9日
  */
 @SuppressWarnings("deprecation")
 public class PhonePhotoDetailActivity extends SuperActivity implements OnClickListener{

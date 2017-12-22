@@ -33,7 +33,7 @@ import com.heshicaihao.todayinformation.utils.AsyncHttpUtil;
 /**
  * 新闻详情的碎片
  * 
- * @author zhou.ni 2015年4月12日
+ * @author heshicaihao 2015年4月12日
  */
 public class NewsDetailActivity extends SuperActivity implements OnClickListener{
 	

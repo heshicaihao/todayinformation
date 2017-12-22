@@ -23,7 +23,7 @@ import com.heshicaihao.todayinformation.activity.GrilDetailActivity;
 /**
  * 美女写真的适配器
  * 
- * @author zhou.ni 2015年4月26日
+ * @author heshicaihao 2015年4月26日
  */
 public class GrilListAdapter extends BaseAdapter {
 	

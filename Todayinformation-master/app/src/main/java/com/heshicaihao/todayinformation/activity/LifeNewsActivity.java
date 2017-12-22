@@ -18,7 +18,7 @@ import com.heshicaihao.todayinformation.fragment.LifeNewFragment;
 /**
  * 生活新闻
  * 
- * @author zhou.ni 2015年5月24日
+ * @author heshicaihao 2015年5月24日
  */
 public class LifeNewsActivity extends SuperFragmentActivity {
 

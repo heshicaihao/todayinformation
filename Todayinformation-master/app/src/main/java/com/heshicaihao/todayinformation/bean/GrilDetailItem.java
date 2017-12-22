@@ -3,7 +3,7 @@ package com.heshicaihao.todayinformation.bean;
 /**
  * 每一条美女图片详情
  * 
- * @author zhou.ni 2015年4月25日
+ * @author heshicaihao 2015年4月25日
  */
 public class GrilDetailItem extends SuperBean {
 

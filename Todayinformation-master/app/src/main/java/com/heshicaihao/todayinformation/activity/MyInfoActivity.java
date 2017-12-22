@@ -38,7 +38,7 @@ import com.heshicaihao.todayinformation.utils.SharedpreferncesUtil;
 /**
  * 用户信息界面
  * 
- * @author zhou.ni 2015年4月20日
+ * @author heshicaihao 2015年4月20日
  */
 public class MyInfoActivity extends SuperActivity implements OnClickListener{
 	

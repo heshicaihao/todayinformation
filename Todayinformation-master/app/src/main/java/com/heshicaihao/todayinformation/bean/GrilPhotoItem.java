@@ -3,7 +3,7 @@ package com.heshicaihao.todayinformation.bean;
 /**
  * 每一张美女图片
  * 
- * @author zhou.ni 2015年4月1日
+ * @author heshicaihao 2015年4月1日
  */
 public class GrilPhotoItem {
 	private String id; 				// id

@@ -37,7 +37,7 @@ import com.heshicaihao.todayinformation.utils.MD5Utils;
 /**
  * 科技详情
  * 
- * @author zhou.ni 2015年5月18日
+ * @author heshicaihao 2015年5月18日
  */
 public class PhoneTechDetailActivity extends SuperActivity implements OnClickListener{
 	

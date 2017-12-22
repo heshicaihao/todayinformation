@@ -13,7 +13,7 @@ import android.util.DisplayMetrics;
 /**
  * 手机本身的一些操作，包括：是否连接网络，屏幕分辨率等；
  * 
- * @author zhou.ni 2015年4月25日
+ * @author heshicaihao 2015年4月25日
  */
 public class AppUtil {
 	

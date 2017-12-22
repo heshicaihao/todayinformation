@@ -15,7 +15,7 @@ import android.util.Xml;
 /**
  * Pull解析
  * 
- * @author zhou.ni 2015年3月19日
+ * @author heshicaihao 2015年3月19日
  */
 public class PullParserUtils {
 

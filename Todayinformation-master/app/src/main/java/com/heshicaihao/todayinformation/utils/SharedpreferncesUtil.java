@@ -20,7 +20,7 @@ import com.heshicaihao.todayinformation.bean.User;
 /**
  * 缓存工具类
  * 
- * @author zhou.ni 2015年5月13日
+ * @author heshicaihao 2015年5月13日
  */
 public class SharedpreferncesUtil {
 	

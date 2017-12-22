@@ -4,7 +4,7 @@ package com.heshicaihao.todayinformation.bean;
 /**
  * 单条新闻
  * 
- * @author zhou.ni 2015年3月22日
+ * @author heshicaihao 2015年3月22日
  */
 public class NewItem extends SuperBean {
 

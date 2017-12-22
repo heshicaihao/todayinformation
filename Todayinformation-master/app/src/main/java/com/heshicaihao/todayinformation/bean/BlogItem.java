@@ -3,7 +3,7 @@ package com.heshicaihao.todayinformation.bean;
 
 /**
  * 每一条博客
- * @author zhou.ni	2015年4月8日
+ * @author heshicaihao	2015年4月8日
  */
 public class BlogItem extends SuperBean{
 

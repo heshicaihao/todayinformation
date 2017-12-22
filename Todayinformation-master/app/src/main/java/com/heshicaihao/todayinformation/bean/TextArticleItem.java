@@ -3,7 +3,7 @@ package com.heshicaihao.todayinformation.bean;
 /**
  * 每一篇纯文字文章
  * 
- * @author zhou.ni 2015年5月20日
+ * @author heshicaihao 2015年5月20日
  */
 public class TextArticleItem extends SuperBean {
 

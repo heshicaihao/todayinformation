@@ -36,7 +36,7 @@ import java.util.List;
 /**
  * HomeActivity的业务封装
  *
- * @author zhou.ni 2015年4月6日
+ * @author heshicaihao 2015年4月6日
  */
 public class HomeController {
     private static final String TAG = "HomeController";

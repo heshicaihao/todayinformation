@@ -58,7 +58,7 @@ import com.heshicaihao.todayinformation.utils.MD5Utils;
 /**
  * 科技资讯
  * 
- * @author zhou.ni 2015年3月18日
+ * @author heshicaihao 2015年3月18日
  */
 public class PhoneTechFragment extends SuperFragment {
 
