@@ -5,7 +5,7 @@
     android:background="@color/ECECEC"
     android:orientation="vertical" >
 
-    <com.todayinfo.ui.component.ErrorHintView
+    <com.heshicaihao.ui.component.ErrorHintView
         android:id="@+id/hintView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -26,12 +26,12 @@
             android:src="@color/ECECEC" />
     </RelativeLayout>
 
-    <com.todayinfo.ui.component.jazzviewpager.JazzyViewPager
+    <com.heshicaihao.ui.component.jazzviewpager.JazzyViewPager
         android:id="@+id/phone_viewpager"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp550"
         android:background="@color/white" >
-    </com.todayinfo.ui.component.jazzviewpager.JazzyViewPager>
+    </com.heshicaihao.ui.component.jazzviewpager.JazzyViewPager>
 
     <LinearLayout
         android:id="@+id/indicator"

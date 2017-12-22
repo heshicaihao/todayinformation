@@ -107,7 +107,7 @@
         android:layout_above="@+id/ll"
         android:background="@color/ECECEC" />
 
-    <com.todayinfo.ui.component.ErrorHintView
+    <com.heshicaihao.ui.component.ErrorHintView
         android:id="@+id/hintView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

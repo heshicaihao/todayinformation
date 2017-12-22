@@ -23,7 +23,7 @@
         android:layout_height="match_parent"
         android:layout_below="@+id/head" />
 
-    <com.todayinfo.ui.component.ViewPagerItem
+    <com.heshicaihao.ui.component.ViewPagerItem
         android:id="@+id/viewpage_item"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

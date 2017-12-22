@@ -11,7 +11,7 @@
         android:layout_height="@dimen/dp160"
         layout="@layout/include_title_head" />
 
-    <com.todayinfo.ui.component.ErrorHintView
+    <com.heshicaihao.ui.component.ErrorHintView
         android:id="@+id/hintView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

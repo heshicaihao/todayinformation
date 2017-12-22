@@ -18,7 +18,7 @@
         android:layout_height="@dimen/dp126"
         android:orientation="horizontal" >
 
-        <com.todayinfo.ui.component.CircleImageView
+        <com.heshicaihao.ui.component.CircleImageView
             android:id="@+id/comment_image"
             android:layout_width="@dimen/dp116"
             android:layout_height="@dimen/dp116"

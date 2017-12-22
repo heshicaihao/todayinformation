@@ -65,7 +65,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.todayinfo.ui.activity.FlashActivity"
+            android:name="com.heshicaihao.ui.activity.FlashActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Light.NoTitleBar">
@@ -78,7 +78,7 @@
 
         <!-- 欢迎界面 -->
         <activity
-            android:name="com.todayinfo.ui.activity.WelcomeActivity"
+            android:name="com.heshicaihao.ui.activity.WelcomeActivity"
             android:exported="true"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
@@ -86,7 +86,7 @@
 
         <!-- 主界面 -->
         <activity
-            android:name="com.todayinfo.ui.activity.HomeActivity"
+            android:name="com.heshicaihao.ui.activity.HomeActivity"
             android:exported="true"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
@@ -94,145 +94,145 @@
 
         <!-- 博客分享 -->
         <activity
-            android:name="com.todayinfo.ui.activity.BolgsShareActivity"
+            android:name="com.heshicaihao.ui.activity.BolgsShareActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
 
         <!-- 游戏人生 -->
         <activity
-            android:name="com.todayinfo.ui.activity.GamesLifeActivity"
+            android:name="com.heshicaihao.ui.activity.GamesLifeActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
 
         <!-- 焦点新闻 -->
         <activity
-            android:name="com.todayinfo.ui.activity.NewsFocusActivity"
+            android:name="com.heshicaihao.ui.activity.NewsFocusActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
 
         <!-- 美女看大图 -->
         <activity
-            android:name="com.todayinfo.ui.activity.GrilDetailActivity"
+            android:name="com.heshicaihao.ui.activity.GrilDetailActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
 
         <!-- 美女写真 -->
         <activity
-            android:name="com.todayinfo.ui.activity.GirlPhotoActivity"
+            android:name="com.heshicaihao.ui.activity.GirlPhotoActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
 
         <!-- 设置 -->
         <activity
-            android:name="com.todayinfo.ui.activity.SettingsActivity"
+            android:name="com.heshicaihao.ui.activity.SettingsActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
 
         <!-- 关于 -->
         <activity
-            android:name="com.todayinfo.ui.activity.AboutActivity"
+            android:name="com.heshicaihao.ui.activity.AboutActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
 
         <!-- 意见反馈 -->
         <activity
-            android:name="com.todayinfo.ui.activity.FeedBackActivity"
+            android:name="com.heshicaihao.ui.activity.FeedBackActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
 
         <!-- 手机美图 -->
         <activity
-            android:name="com.todayinfo.ui.activity.PhonePhotoDetailActivity"
+            android:name="com.heshicaihao.ui.activity.PhonePhotoDetailActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
 
         <!-- 新闻详情 -->
         <activity
-            android:name="com.todayinfo.ui.activity.NewsDetailActivity"
+            android:name="com.heshicaihao.ui.activity.NewsDetailActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
 
         <!-- 登录界面 -->
         <activity
-            android:name="com.todayinfo.ui.activity.LoginActivity"
+            android:name="com.heshicaihao.ui.activity.LoginActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
 
         <!-- 个人资料 -->
         <activity
-            android:name="com.todayinfo.ui.activity.MyInfoActivity"
+            android:name="com.heshicaihao.ui.activity.MyInfoActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
 
         <!-- 游戏详情 -->
         <activity
-            android:name="com.todayinfo.ui.activity.GameDetailActivity"
+            android:name="com.heshicaihao.ui.activity.GameDetailActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
 
         <!-- 博客详情 -->
         <activity
-            android:name="com.todayinfo.ui.activity.BolgDetailActivity"
+            android:name="com.heshicaihao.ui.activity.BolgDetailActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
 
         <!-- 博客评论 -->
         <activity
-            android:name="com.todayinfo.ui.activity.BlogsCommentActivity"
+            android:name="com.heshicaihao.ui.activity.BlogsCommentActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
 
         <!-- 新闻评论 -->
         <activity
-            android:name="com.todayinfo.ui.activity.NewsCommentActivity"
+            android:name="com.heshicaihao.ui.activity.NewsCommentActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
 
         <!-- 文章阅读 -->
         <activity
-            android:name="com.todayinfo.ui.activity.PhoneTechDetailActivity"
+            android:name="com.heshicaihao.ui.activity.PhoneTechDetailActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
 
         <!-- 文章评论 -->
         <activity
-            android:name="com.todayinfo.ui.activity.PhoneTechCommentActivity"
+            android:name="com.heshicaihao.ui.activity.PhoneTechCommentActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
 
         <!-- 收藏 -->
         <activity
-            android:name="com.todayinfo.ui.activity.MyCollectionsActivity"
+            android:name="com.heshicaihao.ui.activity.MyCollectionsActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
 
         <activity
-            android:name="com.todayinfo.ui.activity.LifeNewsActivity"
+            android:name="com.heshicaihao.ui.activity.LifeNewsActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
 
         <activity
-            android:name="com.todayinfo.ui.activity.LifeNewsDetailActivity"
+            android:name="com.heshicaihao.ui.activity.LifeNewsDetailActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
