@@ -25,6 +25,7 @@ import com.todayinfo.ui.component.CustomExitDialog;
 import com.todayinfo.utils.Configure;
 import com.todayinfo.utils.LogUtil;
 
+
 /**
  * 承载所有信息的主界面
  * 
