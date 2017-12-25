@@ -22,6 +22,7 @@ import com.handmark.pulltorefresh.library.PullToRefreshBase.OnLastItemVisibleLis
 import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener;
 import com.handmark.pulltorefresh.library.PullToRefreshListView;
 import com.heshicaihao.todayinformation.R;
+import com.heshicaihao.todayinformation.base.SuperActivity;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.heshicaihao.todayinformation.bean.GrilPhotoItem;
 import com.heshicaihao.todayinformation.adapter.GrilListAdapter;
@@ -29,9 +30,9 @@ import com.heshicaihao.todayinformation.common.DataTask;
 import com.heshicaihao.todayinformation.widget.fastscroll.FastScrollView;
 import com.heshicaihao.todayinformation.widget.fastscroll.IdleListDetector;
 import com.heshicaihao.todayinformation.widget.fastscroll.IdleListener;
-import com.heshicaihao.todayinformation.utils.AsyncHttpUtil;
+import com.heshicaihao.todayinformation.net.AsyncHttpUtils;
 import com.heshicaihao.todayinformation.utils.JsonUtils;
-import com.heshicaihao.todayinformation.utils.LogUtil;
+import com.heshicaihao.todayinformation.utils.LogUtils;
 
 /**
  * 美女写真界面
@@ -158,7 +159,7 @@ public class GirlPhotoActivity extends SuperActivity implements OnClickListener{
 	 */
 	private void loadGrilInfo(final boolean flag){
 		String url = "http://www.6mm.cc/api/list.php?p=" + pageNext;
-		AsyncHttpUtil.get(url, new AsyncHttpResponseHandler() {
+		AsyncHttpUtils.get(url, new AsyncHttpResponseHandler() {
 			
 			@Override
 			public void onSuccess(int code, Header[] headers, byte[] responseBody) {
@@ -177,7 +178,7 @@ public class GirlPhotoActivity extends SuperActivity implements OnClickListener{
 							if ( flag ) {
 								grilList.clear();
 							} 
-							LogUtil.i(TAG, list.get(0).toString());
+							LogUtils.i(TAG, list.get(0).toString());
 							pageNext ++;
 							grilList.addAll(list);
 							grilListAdapter.notifyDataSetChanged();

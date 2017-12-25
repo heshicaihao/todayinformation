@@ -1,4 +1,4 @@
-package com.heshicaihao.todayinformation.utils;
+package com.heshicaihao.todayinformation.common;
 
 import android.app.Activity;
 import android.util.DisplayMetrics;

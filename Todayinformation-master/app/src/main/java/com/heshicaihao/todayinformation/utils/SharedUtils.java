@@ -22,7 +22,7 @@ import com.heshicaihao.todayinformation.bean.User;
  * 
  * @author heshicaihao 2015年5月13日
  */
-public class SharedpreferncesUtil {
+public class SharedUtils {
 	
 public static final String PREFERNCE_FILE_NAME = "obj"; // 缓存文件名
 	

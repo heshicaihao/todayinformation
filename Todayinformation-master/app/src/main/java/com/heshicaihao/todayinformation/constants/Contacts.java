@@ -1,4 +1,4 @@
-package com.heshicaihao.todayinformation.utils;
+package com.heshicaihao.todayinformation.constants;
 
 /**
  * 存放一些全局变量

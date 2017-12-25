@@ -8,6 +8,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.heshicaihao.todayinformation.R;
+import com.heshicaihao.todayinformation.base.SuperActivity;
 
 /**
  * 关于今日资讯界面

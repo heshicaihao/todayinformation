@@ -19,7 +19,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.heshicaihao.todayinformation.R;
-import com.heshicaihao.todayinformation.common.NetWorkCenter;
+import com.heshicaihao.todayinformation.net.NetWorkCenter;
 
 public class DateDialog {
 

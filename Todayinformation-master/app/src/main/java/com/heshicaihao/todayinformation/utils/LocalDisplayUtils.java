@@ -5,7 +5,7 @@ import android.util.DisplayMetrics;
 import android.view.View;
 import android.view.WindowManager;
 
-public class LocalDisplay {
+public class LocalDisplayUtils {
 
     public static int SCREEN_WIDTH_PIXELS;
     public static int SCREEN_HEIGHT_PIXELS;

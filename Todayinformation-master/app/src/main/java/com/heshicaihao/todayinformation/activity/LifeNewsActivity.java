@@ -11,6 +11,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.heshicaihao.todayinformation.R;
+import com.heshicaihao.todayinformation.base.SuperFragmentActivity;
 import com.heshicaihao.todayinformation.widget.PagerSlidingTabStrip;
 import com.heshicaihao.todayinformation.widget.ZoomOutPageTransformer;
 import com.heshicaihao.todayinformation.fragment.LifeNewFragment;

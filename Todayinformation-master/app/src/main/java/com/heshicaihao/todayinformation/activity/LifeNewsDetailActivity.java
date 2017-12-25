@@ -30,13 +30,14 @@ import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;
 
 import com.heshicaihao.todayinformation.R;
+import com.heshicaihao.todayinformation.base.SuperActivity;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.squareup.picasso.Picasso;
 import com.heshicaihao.todayinformation.bean.LifeNewsContent;
 import com.heshicaihao.todayinformation.widget.ErrorHintView;
-import com.heshicaihao.todayinformation.utils.AsyncHttpUtil;
-import com.heshicaihao.todayinformation.utils.Contacts;
-import com.heshicaihao.todayinformation.utils.SharedpreferncesUtil;
+import com.heshicaihao.todayinformation.net.AsyncHttpUtils;
+import com.heshicaihao.todayinformation.constants.Contacts;
+import com.heshicaihao.todayinformation.utils.SharedUtils;
 
 public class LifeNewsDetailActivity extends SuperActivity implements OnClickListener{
 	
@@ -87,7 +88,7 @@ public class LifeNewsDetailActivity extends SuperActivity implements OnClickList
 	 */
 	public void loadLifeNewsInfo(){
 		String url = NEWS_DETAIL + newsId;
-		AsyncHttpUtil.get(url, new AsyncHttpResponseHandler() {
+		AsyncHttpUtils.get(url, new AsyncHttpResponseHandler() {
 			
 			@Override
 			public void onSuccess(int code, Header[] headers, byte[] responseBody) {
@@ -168,8 +169,8 @@ public class LifeNewsDetailActivity extends SuperActivity implements OnClickList
 	 * 初始化控件
 	 */
 	private void initView() {
-		readerMode = SharedpreferncesUtil.getReadMode(mContext, Contacts.READER_MODE, false);
-		fontsize = SharedpreferncesUtil.getFontSize(mContext, Contacts.FONT_SIZE, 17); // 初始化文字大小
+		readerMode = SharedUtils.getReadMode(mContext, Contacts.READER_MODE, false);
+		fontsize = SharedUtils.getFontSize(mContext, Contacts.FONT_SIZE, 17); // 初始化文字大小
 
 		RelativeLayout headView = (RelativeLayout) this.findViewById(R.id.head);
 		headView.findViewById(R.id.back_left).setOnClickListener(new OnClickListener() {
@@ -328,7 +329,7 @@ public class LifeNewsDetailActivity extends SuperActivity implements OnClickList
 
 				@Override
 				public void onStopTrackingTouch(SeekBar seekBar) {
-					SharedpreferncesUtil.putFontSize(mContext, Contacts.FONT_SIZE, fontsize);
+					SharedUtils.putFontSize(mContext, Contacts.FONT_SIZE, fontsize);
 				}
 			});
 			break;
@@ -340,14 +341,14 @@ public class LifeNewsDetailActivity extends SuperActivity implements OnClickList
 				if (mAdapter != null)
 					mAdapter.notifyDataSetChanged();
 				// 保存数据
-				SharedpreferncesUtil.putReadMode(mContext, Contacts.READER_MODE, false);
+				SharedUtils.putReadMode(mContext, Contacts.READER_MODE, false);
 			} else {
 				readerMode = true;
 				readerModeNight();
 				if (mAdapter != null)
 					mAdapter.notifyDataSetChanged();
 				// 保存数据
-				SharedpreferncesUtil.putReadMode(mContext, Contacts.READER_MODE, true);
+				SharedUtils.putReadMode(mContext, Contacts.READER_MODE, true);
 			}
 			break;
 			

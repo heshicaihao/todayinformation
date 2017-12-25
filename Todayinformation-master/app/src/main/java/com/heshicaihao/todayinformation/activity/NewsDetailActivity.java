@@ -24,11 +24,12 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.heshicaihao.todayinformation.R;
+import com.heshicaihao.todayinformation.base.SuperActivity;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.heshicaihao.todayinformation.bean.NewItem;
 import com.heshicaihao.todayinformation.widget.ErrorHintView;
 import com.heshicaihao.todayinformation.widget.ErrorHintView.OperateListener;
-import com.heshicaihao.todayinformation.utils.AsyncHttpUtil;
+import com.heshicaihao.todayinformation.net.AsyncHttpUtils;
 
 /**
  * 新闻详情的碎片
@@ -95,7 +96,7 @@ public class NewsDetailActivity extends SuperActivity implements OnClickListener
 	 * @param url
 	 */
 	private void loadNewsDetailInfo(String url){
-		AsyncHttpUtil.get(url, new AsyncHttpResponseHandler() {
+		AsyncHttpUtils.get(url, new AsyncHttpResponseHandler() {
 			
 			@Override
 			public void onSuccess(int code, Header[] headers, byte[] responseBody) {

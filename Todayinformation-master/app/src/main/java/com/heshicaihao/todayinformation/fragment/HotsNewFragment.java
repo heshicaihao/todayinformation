@@ -28,8 +28,8 @@ import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.heshicaihao.todayinformation.bean.NewItem;
 import com.heshicaihao.todayinformation.activity.NewsDetailActivity;
 import com.heshicaihao.todayinformation.adapter.NewsAdapter;
-import com.heshicaihao.todayinformation.utils.AsyncHttpUtil;
-import com.heshicaihao.todayinformation.utils.LogUtil;
+import com.heshicaihao.todayinformation.net.AsyncHttpUtils;
+import com.heshicaihao.todayinformation.utils.LogUtils;
 
 /**
  * 最新的新闻资讯碎片
@@ -95,7 +95,7 @@ public class HotsNewFragment extends SuperFragment {
 	 * 加载热门新闻的数据
 	 */
 	private void loadHotsNewsInfo(final boolean clean){
-		AsyncHttpUtil.get(URL_PATH, new AsyncHttpResponseHandler() {
+		AsyncHttpUtils.get(URL_PATH, new AsyncHttpResponseHandler() {
 			
 			@Override
 			public void onSuccess(int code, Header[] headers, byte[] responseBody) {
@@ -110,7 +110,7 @@ public class HotsNewFragment extends SuperFragment {
 					newsAdapter.notifyDataSetChanged();
 				} catch (Exception e) {
 					e.printStackTrace();
-					LogUtil.d("error", "hots news XmlPullParserException error");
+					LogUtils.d("error", "hots news XmlPullParserException error");
 				}
 			}
 			

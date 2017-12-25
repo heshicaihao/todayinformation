@@ -10,7 +10,8 @@ import android.view.WindowManager;
 
 import com.heshicaihao.todayinformation.MainActivity;
 import com.heshicaihao.todayinformation.R;
-import com.heshicaihao.todayinformation.utils.SharedpreferncesUtil;
+import com.heshicaihao.todayinformation.base.SuperActivity;
+import com.heshicaihao.todayinformation.utils.SharedUtils;
 
 /**
  * 启动界面
@@ -35,7 +36,7 @@ public class FlashActivity extends SuperActivity {
 				runOnUiThread(new Runnable() {
 
 					public void run() {
-						if (SharedpreferncesUtil.getGuided(mContext)) {
+						if (SharedUtils.getGuided(mContext)) {
 							Intent intent = new Intent(mContext,
 									MainActivity.class);
 							startActivity(intent);

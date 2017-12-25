@@ -1,4 +1,4 @@
-package com.heshicaihao.todayinformation.activity;
+package com.heshicaihao.todayinformation.base;
 
 import java.io.File;
 
@@ -14,11 +14,11 @@ import android.widget.Toast;
 
 import com.heshicaihao.todayinformation.R;
 import com.squareup.picasso.Picasso;
-import com.heshicaihao.todayinformation.common.NetWorkCenter;
+import com.heshicaihao.todayinformation.net.NetWorkCenter;
 import com.heshicaihao.todayinformation.common.UserController;
 import com.heshicaihao.todayinformation.common.DataTask;
 import com.heshicaihao.todayinformation.common.PwdErrorListener;
-import com.heshicaihao.todayinformation.common.RetryNetwork;
+import com.heshicaihao.todayinformation.net.RetryNetwork;
 import com.heshicaihao.todayinformation.utils.BitmapUtils;
 import com.heshicaihao.todayinformation.utils.ThreadPoolManager;
 

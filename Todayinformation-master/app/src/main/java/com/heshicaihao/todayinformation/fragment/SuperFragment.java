@@ -17,9 +17,9 @@ import com.heshicaihao.todayinformation.bean.Info;
 import com.heshicaihao.todayinformation.common.DataTask;
 import com.heshicaihao.todayinformation.common.IBackEventStrategy;
 import com.heshicaihao.todayinformation.common.PwdErrorListener;
-import com.heshicaihao.todayinformation.common.RetryNetwork;
+import com.heshicaihao.todayinformation.net.RetryNetwork;
 import com.heshicaihao.todayinformation.common.Task;
-import com.heshicaihao.todayinformation.utils.LogUtil;
+import com.heshicaihao.todayinformation.utils.LogUtils;
 import com.heshicaihao.todayinformation.utils.ThreadPoolManager;
 
 import org.greenrobot.eventbus.EventBus;
@@ -250,7 +250,7 @@ public abstract class SuperFragment extends Fragment implements RetryNetwork, Pw
                 try {
                     progress.show();
                 } catch (Exception e) {
-                    LogUtil.e(TAG, "progress show exception");
+                    LogUtils.e(TAG, "progress show exception");
                 }
 
             }

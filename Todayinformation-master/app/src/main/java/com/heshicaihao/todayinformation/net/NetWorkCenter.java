@@ -1,12 +1,10 @@
-package com.heshicaihao.todayinformation.common;
+package com.heshicaihao.todayinformation.net;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-
-import com.heshicaihao.todayinformation.common.RetryNetwork;
 
 /**
  * 网络状态监听中心

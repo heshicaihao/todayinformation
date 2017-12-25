@@ -25,12 +25,13 @@ import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener;
 import com.handmark.pulltorefresh.library.PullToRefreshListView;
 import com.heshicaihao.todayinformation.R;
+import com.heshicaihao.todayinformation.base.SuperActivity;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.squareup.picasso.Picasso;
 import com.heshicaihao.todayinformation.bean.GameItem;
 import com.heshicaihao.todayinformation.widget.ErrorHintView;
 import com.heshicaihao.todayinformation.widget.ErrorHintView.OperateListener;
-import com.heshicaihao.todayinformation.utils.AsyncHttpUtil;
+import com.heshicaihao.todayinformation.net.AsyncHttpUtils;
 import com.heshicaihao.todayinformation.utils.JsonUtils;
 
 /**
@@ -115,7 +116,7 @@ public class GamesLifeActivity extends SuperActivity {
 	}
 	
 	public void loadGameInfo(final boolean clean){
-		AsyncHttpUtil.get(URL_PATH, new AsyncHttpResponseHandler() {
+		AsyncHttpUtils.get(URL_PATH, new AsyncHttpResponseHandler() {
 			
 			@Override
 			public void onSuccess(int code, Header[] headers, byte[] responseBody) {

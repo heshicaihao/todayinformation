@@ -25,16 +25,15 @@ import com.heshicaihao.todayinformation.activity.MyCollectionsActivity;
 import com.heshicaihao.todayinformation.activity.MyInfoActivity;
 import com.heshicaihao.todayinformation.activity.NewsFocusActivity;
 import com.heshicaihao.todayinformation.activity.SettingsActivity;
-import com.heshicaihao.todayinformation.activity.SuperFragmentActivity;
+import com.heshicaihao.todayinformation.base.SuperFragmentActivity;
 import com.heshicaihao.todayinformation.common.HomeController;
-import com.heshicaihao.todayinformation.R;
 import com.heshicaihao.todayinformation.residemenu.ResideMenu;
 import com.heshicaihao.todayinformation.residemenu.ResideMenu.OnMenuListener;
 import com.heshicaihao.todayinformation.residemenu.ResideMenuItem;
 import com.heshicaihao.todayinformation.common.UserController;
 import com.heshicaihao.todayinformation.widget.CustomExitDialog;
-import com.heshicaihao.todayinformation.utils.Configure;
-import com.heshicaihao.todayinformation.utils.LogUtil;
+import com.heshicaihao.todayinformation.common.Configure;
+import com.heshicaihao.todayinformation.utils.LogUtils;
 
 /**
  * 承载所有信息的主界面
@@ -332,7 +331,7 @@ public class MainActivity extends SuperFragmentActivity implements OnClickListen
 	@Override
 	public boolean dispatchKeyEvent(KeyEvent event) {
 		if (event.getAction() != KeyEvent.ACTION_UP) {
-			LogUtil.i(TAG, "dispatchKeyEvent:" + event.getKeyCode());
+			LogUtils.i(TAG, "dispatchKeyEvent:" + event.getKeyCode());
 			boolean flag = mHomeController.handleKeyEvent(event);
 			if (flag) {
 				return true;

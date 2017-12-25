@@ -16,12 +16,13 @@ import com.handmark.pulltorefresh.library.PullToRefreshBase.OnLastItemVisibleLis
 import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener;
 import com.handmark.pulltorefresh.library.PullToRefreshListView;
 import com.heshicaihao.todayinformation.R;
+import com.heshicaihao.todayinformation.base.SuperActivity;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.heshicaihao.todayinformation.bean.BolgComment;
 import com.heshicaihao.todayinformation.adapter.BolgCommentAdapter;
 import com.heshicaihao.todayinformation.widget.ErrorHintView;
 import com.heshicaihao.todayinformation.widget.ErrorHintView.OperateListener;
-import com.heshicaihao.todayinformation.utils.AsyncHttpUtil;
+import com.heshicaihao.todayinformation.net.AsyncHttpUtils;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
@@ -156,7 +157,7 @@ public class BlogsCommentActivity extends SuperActivity {
     private void loadBolgCommentInfo(final boolean clean) {
         String url = STR_BEFORE + id + STR_AFTER + pageNext + "/20";
 
-        AsyncHttpUtil.get(url, new AsyncHttpResponseHandler() {
+        AsyncHttpUtils.get(url, new AsyncHttpResponseHandler() {
 
 
             @Override

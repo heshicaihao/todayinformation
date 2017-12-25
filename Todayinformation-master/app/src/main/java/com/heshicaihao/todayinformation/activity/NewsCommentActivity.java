@@ -26,12 +26,13 @@ import com.handmark.pulltorefresh.library.PullToRefreshAdapterViewBase.OnPreRefr
 import com.handmark.pulltorefresh.library.PullToRefreshBase.OnLastItemVisibleListener;
 import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener;
 import com.heshicaihao.todayinformation.R;
+import com.heshicaihao.todayinformation.base.SuperActivity;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.heshicaihao.todayinformation.bean.BolgComment;
 import com.heshicaihao.todayinformation.adapter.BolgCommentAdapter;
 import com.heshicaihao.todayinformation.widget.ErrorHintView;
 import com.heshicaihao.todayinformation.widget.ErrorHintView.OperateListener;
-import com.heshicaihao.todayinformation.utils.AsyncHttpUtil;
+import com.heshicaihao.todayinformation.net.AsyncHttpUtils;
 
 /**
  * 新闻评论
@@ -151,7 +152,7 @@ public class NewsCommentActivity extends SuperActivity {
 	private void loadBolgCommentInfo(final boolean clean){
 		String url = STR_BEFORE + id + STR_AFTER + pageNext +"/20";
 		
-		AsyncHttpUtil.get(url, new AsyncHttpResponseHandler() {
+		AsyncHttpUtils.get(url, new AsyncHttpResponseHandler() {
 			
 			@Override
 			public void onSuccess(int code, Header[] headers, byte[] responseBody) {

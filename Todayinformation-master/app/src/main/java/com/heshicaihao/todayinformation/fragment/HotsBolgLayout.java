@@ -39,7 +39,7 @@ import com.heshicaihao.todayinformation.activity.BolgDetailActivity;
 import com.heshicaihao.todayinformation.widget.CircleImageView;
 import com.heshicaihao.todayinformation.widget.ErrorHintView;
 import com.heshicaihao.todayinformation.widget.ErrorHintView.OperateListener;
-import com.heshicaihao.todayinformation.utils.AsyncHttpUtil;
+import com.heshicaihao.todayinformation.net.AsyncHttpUtils;
 import com.heshicaihao.todayinformation.utils.DateUtils;
 
 /**
@@ -135,7 +135,7 @@ public class HotsBolgLayout extends RelativeLayout{
 	public void loadHotsBolgInfo(final boolean clean){
 		showLoading(VIEW_LOADING);
 		
-		AsyncHttpUtil.get(HOTS_PATH, new AsyncHttpResponseHandler() {
+		AsyncHttpUtils.get(HOTS_PATH, new AsyncHttpResponseHandler() {
 			
 			@Override
 			public void onSuccess(int code, Header[] headers, byte[] responseBody) {

@@ -15,7 +15,7 @@ import android.util.DisplayMetrics;
  * 
  * @author heshicaihao 2015年4月25日
  */
-public class AppUtil {
+public class AppUtils {
 	
 	/** 是否开启debug模式 */
 	public static boolean debug = true; 
@@ -24,7 +24,7 @@ public class AppUtil {
 	 * 设置是否开启debug模式
 	 * */
 	public static void setDebug(boolean debug){
-		AppUtil.debug = debug;
+		AppUtils.debug = debug;
 	}
 	
 	/**

@@ -13,7 +13,8 @@ import android.widget.TextView;
 
 import com.heshicaihao.todayinformation.MainActivity;
 import com.heshicaihao.todayinformation.adapter.SuperViewPagerAdapter;
-import com.heshicaihao.todayinformation.utils.SharedpreferncesUtil;
+import com.heshicaihao.todayinformation.base.SuperActivity;
+import com.heshicaihao.todayinformation.utils.SharedUtils;
 import com.heshicaihao.todayinformation.R;
 
 import java.util.ArrayList;
@@ -80,11 +81,11 @@ public class WelcomeActivity extends SuperActivity {
         start.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (SharedpreferncesUtil.getGuided(mContext)) {
+                if (SharedUtils.getGuided(mContext)) {
                     WelcomeActivity.this.finish();
                     cancelAlphaAnimation();
                 } else {
-                    SharedpreferncesUtil.setGuided(mContext);
+                    SharedUtils.setGuided(mContext);
                     Intent intent = new Intent(mContext, MainActivity.class);
                     startActivity(intent);
                     WelcomeActivity.this.finish();

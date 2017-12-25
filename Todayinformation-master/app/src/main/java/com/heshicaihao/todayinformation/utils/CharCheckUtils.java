@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
  * 字符验证工具
  * 
  */
-public class CharCheckUtil {
+public class CharCheckUtils {
 
 	/**
 	 * 判断是否是数字

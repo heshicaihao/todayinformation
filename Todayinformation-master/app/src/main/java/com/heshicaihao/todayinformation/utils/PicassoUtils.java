@@ -14,7 +14,7 @@ import android.content.Context;
  * @author longtao.li
  * 
  */
-public class Utils {
+public class PicassoUtils {
 
 	private static final String PICASSO_CACHE = "picasso-cache";
 

@@ -1,4 +1,4 @@
-package com.heshicaihao.todayinformation.activity;
+package com.heshicaihao.todayinformation.base;
 
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -9,7 +9,7 @@ import android.view.Window;
 import android.widget.Toast;
 
 import com.heshicaihao.todayinformation.common.PwdErrorListener;
-import com.heshicaihao.todayinformation.common.RetryNetwork;
+import com.heshicaihao.todayinformation.net.RetryNetwork;
 import com.heshicaihao.todayinformation.common.Task;
 import com.heshicaihao.todayinformation.utils.ThreadPoolManager;
 

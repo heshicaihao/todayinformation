@@ -15,8 +15,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.heshicaihao.todayinformation.base.SuperActivity;
 import com.heshicaihao.todayinformation.bean.User;
-import com.heshicaihao.todayinformation.utils.CharCheckUtil;
+import com.heshicaihao.todayinformation.utils.CharCheckUtils;
 import com.heshicaihao.todayinformation.R;
 
 
@@ -140,7 +141,7 @@ public class LoginActivity extends SuperActivity implements OnClickListener {
                     return;
                 }
                 String phoneStr = phone.getText().toString();
-                if (CharCheckUtil.isPhoneNum(phoneStr)) {
+                if (CharCheckUtils.isPhoneNum(phoneStr)) {
                     showProgressDialog();
                     showToast("发送成功");
                     startCountBack();
@@ -210,11 +211,11 @@ public class LoginActivity extends SuperActivity implements OnClickListener {
      * @return false || true
      */
     public boolean LoginCheck() {
-        if (!CharCheckUtil.isPhoneNum(phone.getText().toString())) {
+        if (!CharCheckUtils.isPhoneNum(phone.getText().toString())) {
             showToast("您输入的手机号码有误，请重新输入!");
             return false;
         }
-        if (!CharCheckUtil.isAllDigit(vCode.getText().toString())) {
+        if (!CharCheckUtils.isAllDigit(vCode.getText().toString())) {
             showToast("您输入的验证码有误，请重新输入!");
             return false;
         }

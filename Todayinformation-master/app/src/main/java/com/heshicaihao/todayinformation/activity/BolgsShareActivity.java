@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.heshicaihao.todayinformation.R;
 import com.heshicaihao.todayinformation.adapter.SuperViewPagerAdapter;
+import com.heshicaihao.todayinformation.base.SuperActivity;
 import com.heshicaihao.todayinformation.fragment.FreshBolgLayout;
 import com.heshicaihao.todayinformation.fragment.HotsBolgLayout;
 

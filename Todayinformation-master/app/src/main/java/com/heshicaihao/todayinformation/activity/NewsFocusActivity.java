@@ -32,14 +32,15 @@ import com.handmark.pulltorefresh.library.PullToRefreshBase.OnLastItemVisibleLis
 import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener;
 import com.handmark.pulltorefresh.library.PullToRefreshListView;
 import com.heshicaihao.todayinformation.R;
+import com.heshicaihao.todayinformation.base.SuperActivity;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.squareup.picasso.Picasso;
 import com.heshicaihao.todayinformation.bean.NewItem;
 import com.heshicaihao.todayinformation.widget.ErrorHintView;
 import com.heshicaihao.todayinformation.widget.ErrorHintView.OperateListener;
-import com.heshicaihao.todayinformation.utils.AsyncHttpUtil;
+import com.heshicaihao.todayinformation.net.AsyncHttpUtils;
 import com.heshicaihao.todayinformation.utils.DateUtils;
-import com.heshicaihao.todayinformation.utils.LogUtil;
+import com.heshicaihao.todayinformation.utils.LogUtils;
 
 /**
  * 新闻焦点
@@ -160,7 +161,7 @@ public class NewsFocusActivity extends SuperActivity {
 	private void loadNewsFocusInfo(final boolean clean){
 		String url = PATH + pageNext + "/10";
 		
-		AsyncHttpUtil.get(url, new AsyncHttpResponseHandler() {
+		AsyncHttpUtils.get(url, new AsyncHttpResponseHandler() {
 			
 			@Override
 			public void onSuccess(int code, Header[] headers, byte[] responseBody) {
@@ -181,7 +182,7 @@ public class NewsFocusActivity extends SuperActivity {
 					pageNext ++;
 				} catch (Exception e) {
 					e.printStackTrace();
-					LogUtil.d("error", "hots news XmlPullParserException error");
+					LogUtils.d("error", "hots news XmlPullParserException error");
 					showLoading(VIEW_LOADFAILURE);
 				}
 			}

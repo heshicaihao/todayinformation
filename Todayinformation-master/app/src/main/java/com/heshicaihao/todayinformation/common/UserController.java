@@ -5,7 +5,7 @@ import java.util.List;
 import android.content.Context;
 
 import com.heshicaihao.todayinformation.bean.User;
-import com.heshicaihao.todayinformation.utils.SharedpreferncesUtil;
+import com.heshicaihao.todayinformation.utils.SharedUtils;
 
 /**
  * 封装用户 业务逻辑
@@ -46,7 +46,7 @@ public class UserController {
 	 * @return null 表示无用户信息
 	 */
 	public User getUserInfo(){
-		return SharedpreferncesUtil.getUserInfo(mContext);
+		return SharedUtils.getUserInfo(mContext);
 	}
 	
 	/**
@@ -54,14 +54,14 @@ public class UserController {
 	 * @param user
 	 */
 	public void saveUserInfo(User user){
-		SharedpreferncesUtil.saveUserInfo(mContext, user);
+		SharedUtils.saveUserInfo(mContext, user);
 	}
 	
 	/**
 	 * 登出
 	 */
 	public void loginOut(){
-		SharedpreferncesUtil.clearByKey(SharedpreferncesUtil.KEY_USER_INFO, mContext);
+		SharedUtils.clearByKey(SharedUtils.KEY_USER_INFO, mContext);
 	}
 	
 	/**
@@ -70,7 +70,7 @@ public class UserController {
 	 * @return null 表示无用户信息
 	 */
 	public List<Object> getCollectionInfo(){
-		return SharedpreferncesUtil.getCollectionInfo(mContext);
+		return SharedUtils.getCollectionInfo(mContext);
 	}
 	
 	/**
@@ -78,7 +78,7 @@ public class UserController {
 	 * @param user
 	 */
 	public void saveCollectionInfo(List<Object> list){
-		SharedpreferncesUtil.saveCollectionInfo(mContext, list);
+		SharedUtils.saveCollectionInfo(mContext, list);
 	}
 	
 	

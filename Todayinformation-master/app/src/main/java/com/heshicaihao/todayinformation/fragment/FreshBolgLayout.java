@@ -41,7 +41,7 @@ import com.heshicaihao.todayinformation.activity.BolgDetailActivity;
 import com.heshicaihao.todayinformation.widget.CircleImageView;
 import com.heshicaihao.todayinformation.widget.ErrorHintView;
 import com.heshicaihao.todayinformation.widget.ErrorHintView.OperateListener;
-import com.heshicaihao.todayinformation.utils.AsyncHttpUtil;
+import com.heshicaihao.todayinformation.net.AsyncHttpUtils;
 import com.heshicaihao.todayinformation.utils.DateUtils;
 
 /**
@@ -168,7 +168,7 @@ public class FreshBolgLayout extends RelativeLayout{
 		showLoading(VIEW_LOADING);
 		
 		String url = FRESH_PATH + pageNext + "/10";
-		AsyncHttpUtil.get(url, new AsyncHttpResponseHandler() {
+		AsyncHttpUtils.get(url, new AsyncHttpResponseHandler() {
 			
 			@Override
 			public void onSuccess(int code, Header[] headers, byte[] responseBody) {

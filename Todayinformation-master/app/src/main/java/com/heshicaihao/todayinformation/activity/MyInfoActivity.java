@@ -27,13 +27,14 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.heshicaihao.todayinformation.R;
+import com.heshicaihao.todayinformation.base.SuperActivity;
 import com.squareup.picasso.Picasso;
 import com.heshicaihao.todayinformation.bean.User;
 import com.heshicaihao.todayinformation.widget.DateDialog;
 import com.heshicaihao.todayinformation.widget.DateDialog.DateBtnListener;
 import com.heshicaihao.todayinformation.widget.pulltozoomview.PullToZoomScrollViewEx;
 import com.heshicaihao.todayinformation.utils.DateUtils;
-import com.heshicaihao.todayinformation.utils.SharedpreferncesUtil;
+import com.heshicaihao.todayinformation.utils.SharedUtils;
 
 /**
  * 用户信息界面
@@ -128,7 +129,7 @@ public class MyInfoActivity extends SuperActivity implements OnClickListener{
 						long date = DateUtils.getString2Date(brithday);
 						Log.i(TAG, "" + date);
 						user.birthday = date;
-						SharedpreferncesUtil.saveUserInfo(mContext, user);
+						SharedUtils.saveUserInfo(mContext, user);
 						Toast.makeText(mContext, "更新成功", Toast.LENGTH_SHORT).show();
 					}
 					break;
@@ -207,7 +208,7 @@ public class MyInfoActivity extends SuperActivity implements OnClickListener{
 						String newName = nameEdit.getText().toString();
 						if ( !TextUtils.isEmpty(newName) ) {
 							user.name = newName;
-							SharedpreferncesUtil.saveUserInfo(mContext, user);
+							SharedUtils.saveUserInfo(mContext, user);
 							Toast.makeText(mContext, "更新成功", Toast.LENGTH_SHORT).show();
 							viewStubModifyName.setVisibility(View.GONE);
 						} else {
@@ -271,7 +272,7 @@ public class MyInfoActivity extends SuperActivity implements OnClickListener{
 				ok.setOnClickListener(new OnClickListener() {
 					@Override
 					public void onClick(View v) {
-						SharedpreferncesUtil.saveUserInfo(mContext, user);
+						SharedUtils.saveUserInfo(mContext, user);
 						Toast.makeText(mContext, "更新成功", Toast.LENGTH_SHORT).show();
 						viewStubModifySex.setVisibility(View.GONE);
 					}

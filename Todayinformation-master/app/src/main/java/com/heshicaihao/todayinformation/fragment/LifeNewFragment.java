@@ -30,8 +30,8 @@ import com.squareup.picasso.Picasso;
 import com.heshicaihao.todayinformation.bean.LifeNews;
 import com.heshicaihao.todayinformation.bean.LifeNewsList;
 import com.heshicaihao.todayinformation.activity.LifeNewsDetailActivity;
-import com.heshicaihao.todayinformation.utils.AsyncHttpUtil;
-import com.heshicaihao.todayinformation.utils.LocalDisplay;
+import com.heshicaihao.todayinformation.net.AsyncHttpUtils;
+import com.heshicaihao.todayinformation.utils.LocalDisplayUtils;
 
 public class LifeNewFragment extends SuperFragment {
 	
@@ -63,7 +63,7 @@ public class LifeNewFragment extends SuperFragment {
 		View rootView = inflater.inflate(R.layout.fm_life_news_list, container, false);
 		viewContainer = (RelativeLayout) rootView.findViewById(R.id.container);
 		
-		LocalDisplay.init(mContext);
+		LocalDisplayUtils.init(mContext);
 		loadLifeNewsInfo(true);
 		return rootView;
 	}
@@ -73,7 +73,7 @@ public class LifeNewFragment extends SuperFragment {
 	 */
 	public void loadLifeNewsInfo(final boolean clean){
 		String url = BEFORE_PATH + channelId + AFTER_PATH + requiredPage ;
-		AsyncHttpUtil.get(url, new AsyncHttpResponseHandler() {
+		AsyncHttpUtils.get(url, new AsyncHttpResponseHandler() {
 			
 			@Override
 			public void onSuccess(int code, Header[] headers, byte[] responseBody) {

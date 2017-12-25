@@ -19,6 +19,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.heshicaihao.todayinformation.R;
+import com.heshicaihao.todayinformation.base.SuperActivity;
 import com.squareup.picasso.Picasso;
 import com.heshicaihao.todayinformation.bean.ArticleItem;
 import com.heshicaihao.todayinformation.bean.BlogItem;

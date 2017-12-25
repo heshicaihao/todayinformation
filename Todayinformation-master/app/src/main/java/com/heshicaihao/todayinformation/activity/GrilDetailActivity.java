@@ -24,6 +24,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.heshicaihao.todayinformation.R;
+import com.heshicaihao.todayinformation.base.SuperActivity;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
@@ -31,8 +32,8 @@ import com.squareup.picasso.Transformation;
 import com.heshicaihao.todayinformation.bean.GrilDetailItem;
 import com.heshicaihao.todayinformation.widget.ViewPagerItem;
 import com.heshicaihao.todayinformation.widget.gesture.PhotoViewAttacher;
-import com.heshicaihao.todayinformation.utils.AppUtil;
-import com.heshicaihao.todayinformation.utils.AsyncHttpUtil;
+import com.heshicaihao.todayinformation.utils.AppUtils;
+import com.heshicaihao.todayinformation.net.AsyncHttpUtils;
 import com.heshicaihao.todayinformation.utils.JsonUtils;
 
 /**
@@ -68,7 +69,7 @@ public class GrilDetailActivity extends SuperActivity implements OnClickListener
 		String tit = intent.getStringExtra("title");
 		
 		//获取屏幕宽度
-		w = AppUtil.getPhoneHW(mContext);  
+		w = AppUtils.getPhoneHW(mContext);
 		
 		RelativeLayout headView = (RelativeLayout) this.findViewById(R.id.head);
 		headView.findViewById(R.id.back_left).setOnClickListener(this);;
@@ -104,7 +105,7 @@ public class GrilDetailActivity extends SuperActivity implements OnClickListener
 	 */
 	private void loadGrilPhotoDetailData(){
 		String url = path + aid;
-		AsyncHttpUtil.get(url, new AsyncHttpResponseHandler() {
+		AsyncHttpUtils.get(url, new AsyncHttpResponseHandler() {
 			
 			@Override
 			public void onSuccess(int arg0, Header[] arg1, byte[] arg2) {

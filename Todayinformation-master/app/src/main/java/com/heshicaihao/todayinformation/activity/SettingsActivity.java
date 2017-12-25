@@ -14,8 +14,9 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.heshicaihao.todayinformation.R;
+import com.heshicaihao.todayinformation.base.SuperActivity;
 import com.heshicaihao.todayinformation.utils.FileUtils;
-import com.heshicaihao.todayinformation.utils.Utils;
+import com.heshicaihao.todayinformation.utils.PicassoUtils;
 
 /**
  * 设置界面
@@ -107,7 +108,7 @@ public class SettingsActivity extends SuperActivity implements OnClickListener{
 					@Override
 					public void onClick(View v) {
 						// 清除缓存图片代码 
-						File file = Utils.createDefaultCacheDir(mContext);
+						File file = PicassoUtils.createDefaultCacheDir(mContext);
 						delAllFile(file.getPath());
 						cache.setText(FileUtils.getDiskCacheSize(mContext));
 						cacheViewStub.setVisibility(View.GONE);

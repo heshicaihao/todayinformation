@@ -92,7 +92,7 @@ public class FileUtils {
 	// 获取图片缓存大小
 	public static String getDiskCacheSize(Context context) {
 		int sizeSum = 0;
-		File diskfile = Utils.createDefaultCacheDir(context);
+		File diskfile = PicassoUtils.createDefaultCacheDir(context);
 		String[] diskfileList = diskfile.list();
 		for (int i = 0; i < diskfileList.length; i++) {
 			File filesize = new File(diskfile + "/" + diskfileList[i]);

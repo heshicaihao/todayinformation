@@ -1,4 +1,4 @@
-package com.heshicaihao.todayinformation.common;
+package com.heshicaihao.todayinformation.net;
 
 /**
  * 网络异常重试网络操作接口

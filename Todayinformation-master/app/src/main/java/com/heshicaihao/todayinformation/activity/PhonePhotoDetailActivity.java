@@ -21,6 +21,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.heshicaihao.todayinformation.R;
+import com.heshicaihao.todayinformation.base.SuperActivity;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
 import com.squareup.picasso.Picasso;
@@ -29,8 +30,8 @@ import com.heshicaihao.todayinformation.bean.PhotoDetailedItem;
 import com.heshicaihao.todayinformation.widget.ErrorHintView;
 import com.heshicaihao.todayinformation.widget.SuperUI;
 import com.heshicaihao.todayinformation.widget.ErrorHintView.OperateListener;
-import com.heshicaihao.todayinformation.utils.AsyncHttpUtil;
-import com.heshicaihao.todayinformation.utils.Contacts;
+import com.heshicaihao.todayinformation.net.AsyncHttpUtils;
+import com.heshicaihao.todayinformation.constants.Contacts;
 import com.heshicaihao.todayinformation.utils.MD5Utils;
 
 /**
@@ -126,7 +127,7 @@ public class PhonePhotoDetailActivity extends SuperActivity implements OnClickLi
 //		params.put("uid", uid );			//用户id ，登陆的时候传，不登陆不传
 		params.put("size", 800);			//文章内图片的尺寸可以传500 800默认为500
 	
-		AsyncHttpUtil.get(Contacts.PHONE_URL, params, new AsyncHttpResponseHandler() {
+		AsyncHttpUtils.get(Contacts.PHONE_URL, params, new AsyncHttpResponseHandler() {
 			
 			@Override
 			public void onSuccess(int arg0, Header[] arg1, byte[] arg2) {

@@ -50,8 +50,8 @@ import com.heshicaihao.todayinformation.widget.ErrorHintView.OperateListener;
 import com.heshicaihao.todayinformation.widget.jazzviewpager.JazzyViewPager;
 import com.heshicaihao.todayinformation.widget.jazzviewpager.JazzyViewPager.TransitionEffect;
 import com.heshicaihao.todayinformation.widget.jazzviewpager.OutlineContainer;
-import com.heshicaihao.todayinformation.utils.AsyncHttpUtil;
-import com.heshicaihao.todayinformation.utils.Contacts;
+import com.heshicaihao.todayinformation.net.AsyncHttpUtils;
+import com.heshicaihao.todayinformation.constants.Contacts;
 import com.heshicaihao.todayinformation.utils.JsonUtils;
 import com.heshicaihao.todayinformation.utils.MD5Utils;
 
@@ -341,7 +341,7 @@ public class PhoneTechFragment extends SuperFragment {
 		params.put("offset", offset );				//分页用，数据记录的起始行数。0为第一条记录。
 		params.put("rows", 10);						//分页用，数据记录每次取得的行数。不传此参数则默认获取10条记录。
 		
-		AsyncHttpUtil.get(Contacts.PHONE_URL, params, new AsyncHttpResponseHandler() {
+		AsyncHttpUtils.get(Contacts.PHONE_URL, params, new AsyncHttpResponseHandler() {
 			
 			@Override
 			public void onSuccess(int arg0, Header[] arg1, byte[] arg2) {
