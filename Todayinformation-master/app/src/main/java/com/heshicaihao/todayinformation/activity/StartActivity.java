@@ -10,14 +10,14 @@ import android.view.WindowManager;
 
 import com.heshicaihao.todayinformation.MainActivity;
 import com.heshicaihao.todayinformation.R;
-import com.heshicaihao.todayinformation.base.SuperActivity;
+import com.heshicaihao.todayinformation.base.BaseActivity;
 import com.heshicaihao.todayinformation.utils.SharedUtils;
 
 /**
  * 启动界面
  * @author heshicaihao 2015年4月13日
  */
-public class FlashActivity extends SuperActivity {
+public class StartActivity extends BaseActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +25,7 @@ public class FlashActivity extends SuperActivity {
 		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
 				WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		setContentView(R.layout.activity_flash);
+		setContentView(R.layout.activity_start);
 
 		isNormalStart = true;
 
@@ -40,12 +40,12 @@ public class FlashActivity extends SuperActivity {
 							Intent intent = new Intent(mContext,
 									MainActivity.class);
 							startActivity(intent);
-							FlashActivity.this.finish();
+							StartActivity.this.finish();
 						} else {
-							Intent intent = new Intent(FlashActivity.this,
+							Intent intent = new Intent(StartActivity.this,
 									WelcomeActivity.class);
-							FlashActivity.this.startActivity(intent);
-							FlashActivity.this.finish();
+							StartActivity.this.startActivity(intent);
+							StartActivity.this.finish();
 						}
 
 					}

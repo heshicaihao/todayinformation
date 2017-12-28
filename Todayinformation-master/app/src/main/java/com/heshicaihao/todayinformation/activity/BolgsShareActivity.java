@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 import com.heshicaihao.todayinformation.R;
 import com.heshicaihao.todayinformation.adapter.SuperViewPagerAdapter;
-import com.heshicaihao.todayinformation.base.SuperActivity;
+import com.heshicaihao.todayinformation.base.BaseActivity;
 import com.heshicaihao.todayinformation.fragment.FreshBolgLayout;
 import com.heshicaihao.todayinformation.fragment.HotsBolgLayout;
 
@@ -21,7 +21,7 @@ import com.heshicaihao.todayinformation.fragment.HotsBolgLayout;
  * 
  * @author heshicaihao 2015年3月17日
  */
-public class BolgsShareActivity extends SuperActivity implements OnClickListener{
+public class BolgsShareActivity extends BaseActivity implements OnClickListener{
 	
 	private SuperViewPagerAdapter pagerAdapter;
 	private ViewPager mViewPager;

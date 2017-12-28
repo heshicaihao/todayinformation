@@ -27,7 +27,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.heshicaihao.todayinformation.R;
-import com.heshicaihao.todayinformation.base.SuperActivity;
+import com.heshicaihao.todayinformation.base.BaseActivity;
 import com.squareup.picasso.Picasso;
 import com.heshicaihao.todayinformation.bean.User;
 import com.heshicaihao.todayinformation.widget.DateDialog;
@@ -41,7 +41,7 @@ import com.heshicaihao.todayinformation.utils.SharedUtils;
  * 
  * @author heshicaihao 2015年4月20日
  */
-public class MyInfoActivity extends SuperActivity implements OnClickListener{
+public class MyInfoActivity extends BaseActivity implements OnClickListener{
 	
 	private static final String TAG = "MyInfoActivity";
 	

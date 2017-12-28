@@ -16,7 +16,7 @@ import com.handmark.pulltorefresh.library.PullToRefreshBase.OnLastItemVisibleLis
 import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener;
 import com.handmark.pulltorefresh.library.PullToRefreshListView;
 import com.heshicaihao.todayinformation.R;
-import com.heshicaihao.todayinformation.base.SuperActivity;
+import com.heshicaihao.todayinformation.base.BaseActivity;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.heshicaihao.todayinformation.bean.BolgComment;
 import com.heshicaihao.todayinformation.adapter.BolgCommentAdapter;
@@ -39,7 +39,7 @@ import java.util.List;
  *
  * @author heshicaihao 2015年5月17日
  */
-public class BlogsCommentActivity extends SuperActivity {
+public class BlogsCommentActivity extends BaseActivity {
 
     private PullToRefreshListView mListView;
     private ErrorHintView mErrorHintView;

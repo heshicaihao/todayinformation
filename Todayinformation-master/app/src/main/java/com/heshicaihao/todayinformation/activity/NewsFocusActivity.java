@@ -32,7 +32,7 @@ import com.handmark.pulltorefresh.library.PullToRefreshBase.OnLastItemVisibleLis
 import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener;
 import com.handmark.pulltorefresh.library.PullToRefreshListView;
 import com.heshicaihao.todayinformation.R;
-import com.heshicaihao.todayinformation.base.SuperActivity;
+import com.heshicaihao.todayinformation.base.BaseActivity;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.squareup.picasso.Picasso;
 import com.heshicaihao.todayinformation.bean.NewItem;
@@ -47,7 +47,7 @@ import com.heshicaihao.todayinformation.utils.LogUtils;
  * 
  * @author heshicaihao 2015年3月17日
  */
-public class NewsFocusActivity extends SuperActivity {
+public class NewsFocusActivity extends BaseActivity {
 	
 	private PullToRefreshListView mListView;
 	private ErrorHintView mErrorHintView;

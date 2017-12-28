@@ -27,7 +27,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.heshicaihao.todayinformation.R;
-import com.heshicaihao.todayinformation.base.SuperActivity;
+import com.heshicaihao.todayinformation.base.BaseActivity;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.heshicaihao.todayinformation.bean.BlogItem;
 import com.heshicaihao.todayinformation.widget.ErrorHintView;
@@ -40,7 +40,7 @@ import com.heshicaihao.todayinformation.net.AsyncHttpUtils;
  * 
  * @author heshicaihao 2015年5月17日
  */
-public class BolgDetailActivity extends SuperActivity implements OnClickListener{
+public class BolgDetailActivity extends BaseActivity implements OnClickListener{
 
 	private WebView mWeb;
 	private TextView title;

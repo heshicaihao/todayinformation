@@ -13,7 +13,7 @@ import android.widget.TextView;
 
 import com.heshicaihao.todayinformation.MainActivity;
 import com.heshicaihao.todayinformation.adapter.SuperViewPagerAdapter;
-import com.heshicaihao.todayinformation.base.SuperActivity;
+import com.heshicaihao.todayinformation.base.BaseActivity;
 import com.heshicaihao.todayinformation.utils.SharedUtils;
 import com.heshicaihao.todayinformation.R;
 
@@ -25,7 +25,7 @@ import java.util.List;
  *
  * @author heshicaihao 2015年4月13日
  */
-public class WelcomeActivity extends SuperActivity {
+public class WelcomeActivity extends BaseActivity {
     private ViewPager introductVp;                        // 介绍页面
     private SuperViewPagerAdapter viewPagerAdapter;
     private List<View> views = new ArrayList<View>();   // Tab页面列表

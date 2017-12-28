@@ -30,7 +30,7 @@ import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;
 
 import com.heshicaihao.todayinformation.R;
-import com.heshicaihao.todayinformation.base.SuperActivity;
+import com.heshicaihao.todayinformation.base.BaseActivity;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.squareup.picasso.Picasso;
 import com.heshicaihao.todayinformation.bean.LifeNewsContent;
@@ -39,7 +39,7 @@ import com.heshicaihao.todayinformation.net.AsyncHttpUtils;
 import com.heshicaihao.todayinformation.constants.Contacts;
 import com.heshicaihao.todayinformation.utils.SharedUtils;
 
-public class LifeNewsDetailActivity extends SuperActivity implements OnClickListener{
+public class LifeNewsDetailActivity extends BaseActivity implements OnClickListener{
 	
 	public static final int TEXT_TYPE = 0;
 	public static final int IMG_TYPE = 1;

@@ -21,7 +21,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.heshicaihao.todayinformation.R;
-import com.heshicaihao.todayinformation.base.SuperActivity;
+import com.heshicaihao.todayinformation.base.BaseActivity;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.squareup.picasso.Picasso;
 import com.heshicaihao.todayinformation.bean.GameDatail;
@@ -36,7 +36,7 @@ import com.heshicaihao.todayinformation.utils.JsonUtils;
  * 
  * @author heshicaihao 2015年5月17日
  */
-public class GameDetailActivity extends SuperActivity {
+public class GameDetailActivity extends BaseActivity {
 	
 	private static final String URL_PATH = "http://www.gamept.cn/yx_zt.php?ztid=";
 	

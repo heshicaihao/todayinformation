@@ -8,14 +8,14 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.heshicaihao.todayinformation.R;
-import com.heshicaihao.todayinformation.base.SuperActivity;
+import com.heshicaihao.todayinformation.base.BaseActivity;
 
 /**
  * 关于今日资讯界面
  * 
  * @author heshicaihao 2015年4月16日
  */
-public class AboutActivity extends SuperActivity {
+public class AboutActivity extends BaseActivity {
 
 	private TextView agreement;
 	

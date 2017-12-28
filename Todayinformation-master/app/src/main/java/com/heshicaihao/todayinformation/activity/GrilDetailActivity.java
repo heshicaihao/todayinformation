@@ -24,7 +24,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.heshicaihao.todayinformation.R;
-import com.heshicaihao.todayinformation.base.SuperActivity;
+import com.heshicaihao.todayinformation.base.BaseActivity;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
@@ -41,7 +41,7 @@ import com.heshicaihao.todayinformation.utils.JsonUtils;
  * 
  * @author heshicaihao 2015年4月25日
  */
-public class GrilDetailActivity extends SuperActivity implements OnClickListener{
+public class GrilDetailActivity extends BaseActivity implements OnClickListener{
 
 	private GrilDetailAdaper detailAdaper;
 	private List<GrilDetailItem> detailList = new ArrayList<GrilDetailItem>();

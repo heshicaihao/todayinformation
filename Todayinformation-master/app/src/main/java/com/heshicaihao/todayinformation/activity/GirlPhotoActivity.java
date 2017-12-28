@@ -22,7 +22,7 @@ import com.handmark.pulltorefresh.library.PullToRefreshBase.OnLastItemVisibleLis
 import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener;
 import com.handmark.pulltorefresh.library.PullToRefreshListView;
 import com.heshicaihao.todayinformation.R;
-import com.heshicaihao.todayinformation.base.SuperActivity;
+import com.heshicaihao.todayinformation.base.BaseActivity;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.heshicaihao.todayinformation.bean.GrilPhotoItem;
 import com.heshicaihao.todayinformation.adapter.GrilListAdapter;
@@ -39,7 +39,7 @@ import com.heshicaihao.todayinformation.utils.LogUtils;
  * 
  * @author heshicaihao  2015年3月18日
  */
-public class GirlPhotoActivity extends SuperActivity implements OnClickListener{
+public class GirlPhotoActivity extends BaseActivity implements OnClickListener{
 	
 	private static final String TAG = "GirlPhotoActivity";
 	

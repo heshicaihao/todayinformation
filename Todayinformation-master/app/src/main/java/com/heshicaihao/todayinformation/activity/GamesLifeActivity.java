@@ -25,7 +25,7 @@ import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener;
 import com.handmark.pulltorefresh.library.PullToRefreshListView;
 import com.heshicaihao.todayinformation.R;
-import com.heshicaihao.todayinformation.base.SuperActivity;
+import com.heshicaihao.todayinformation.base.BaseActivity;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.squareup.picasso.Picasso;
 import com.heshicaihao.todayinformation.bean.GameItem;
@@ -39,7 +39,7 @@ import com.heshicaihao.todayinformation.utils.JsonUtils;
  * 
  * @author heshicaihao 2015年3月17日
  */
-public class GamesLifeActivity extends SuperActivity {
+public class GamesLifeActivity extends BaseActivity {
 	
 	private PullToRefreshListView gameListView;
 	private ErrorHintView mErrorHintView;

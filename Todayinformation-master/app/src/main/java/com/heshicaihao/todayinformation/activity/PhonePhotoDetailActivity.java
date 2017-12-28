@@ -21,7 +21,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.heshicaihao.todayinformation.R;
-import com.heshicaihao.todayinformation.base.SuperActivity;
+import com.heshicaihao.todayinformation.base.BaseActivity;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
 import com.squareup.picasso.Picasso;
@@ -40,7 +40,7 @@ import com.heshicaihao.todayinformation.utils.MD5Utils;
  * @author heshicaihao 2015年5月9日
  */
 @SuppressWarnings("deprecation")
-public class PhonePhotoDetailActivity extends SuperActivity implements OnClickListener{
+public class PhonePhotoDetailActivity extends BaseActivity implements OnClickListener{
 	
 	private Gallery mGallery;
 	private TextView mContent;

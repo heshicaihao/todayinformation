@@ -15,13 +15,13 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.heshicaihao.todayinformation.base.SuperActivity;
+import com.heshicaihao.todayinformation.base.BaseActivity;
 import com.heshicaihao.todayinformation.bean.User;
 import com.heshicaihao.todayinformation.utils.CharCheckUtils;
 import com.heshicaihao.todayinformation.R;
 
 
-public class LoginActivity extends SuperActivity implements OnClickListener {
+public class LoginActivity extends BaseActivity implements OnClickListener {
 
     private View view;
     private EditText phone;

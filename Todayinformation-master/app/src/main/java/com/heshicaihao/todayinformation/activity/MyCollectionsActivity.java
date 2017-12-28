@@ -19,7 +19,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.heshicaihao.todayinformation.R;
-import com.heshicaihao.todayinformation.base.SuperActivity;
+import com.heshicaihao.todayinformation.base.BaseActivity;
 import com.squareup.picasso.Picasso;
 import com.heshicaihao.todayinformation.bean.ArticleItem;
 import com.heshicaihao.todayinformation.bean.BlogItem;
@@ -33,7 +33,7 @@ import com.heshicaihao.todayinformation.utils.DateUtils;
  * 
  * @author heshicaihao 2015年3月16日
  */
-public class MyCollectionsActivity extends SuperActivity {
+public class MyCollectionsActivity extends BaseActivity {
 	
 	private ErrorHintView mErrorHintView;
 	private ListView mListView;

@@ -22,7 +22,7 @@ import com.heshicaihao.todayinformation.net.RetryNetwork;
 import com.heshicaihao.todayinformation.utils.BitmapUtils;
 import com.heshicaihao.todayinformation.utils.ThreadPoolManager;
 
-public abstract class SuperActivity extends Activity implements RetryNetwork, PwdErrorListener {
+public abstract class BaseActivity extends Activity implements RetryNetwork, PwdErrorListener {
 	
 	protected boolean isAvtive = false;
 	
@@ -86,7 +86,7 @@ public abstract class SuperActivity extends Activity implements RetryNetwork, Pw
 	/**
 	 * 显示进度条
 	 */
-	void showProgressDialog(){
+	public void showProgressDialog(){
 		runOnUiThread(new Runnable() {
 			
 			@Override
@@ -162,7 +162,7 @@ public abstract class SuperActivity extends Activity implements RetryNetwork, Pw
 		
 		if( !isNormalStart ){
 			//非正常启动
-//			Intent i = new Intent(this, FlashActivity.class);
+//			Intent i = new Intent(this, StartActivity.class);
 //        	i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 //        	startActivity(i);
 		}

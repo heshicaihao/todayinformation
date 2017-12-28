@@ -9,14 +9,14 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.heshicaihao.todayinformation.R;
-import com.heshicaihao.todayinformation.base.SuperActivity;
+import com.heshicaihao.todayinformation.base.BaseActivity;
 
 /**
  * 意见反馈
  * 
  * @author heshicaihao 2015年4月16日
  */
-public class FeedBackActivity extends SuperActivity implements OnClickListener{
+public class FeedBackActivity extends BaseActivity implements OnClickListener{
 	
 	private EditText problemText;
 	

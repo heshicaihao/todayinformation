@@ -14,7 +14,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.heshicaihao.todayinformation.R;
-import com.heshicaihao.todayinformation.base.SuperActivity;
+import com.heshicaihao.todayinformation.base.BaseActivity;
 import com.heshicaihao.todayinformation.utils.FileUtils;
 import com.heshicaihao.todayinformation.utils.PicassoUtils;
 
@@ -23,7 +23,7 @@ import com.heshicaihao.todayinformation.utils.PicassoUtils;
  * 
  * @author heshicaihao 2015年3月16日
  */
-public class SettingsActivity extends SuperActivity implements OnClickListener{
+public class SettingsActivity extends BaseActivity implements OnClickListener{
 
 	private TextView version;
 	private TextView cache;

@@ -23,7 +23,7 @@ import com.handmark.pulltorefresh.library.PullToRefreshBase.OnLastItemVisibleLis
 import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener;
 import com.handmark.pulltorefresh.library.PullToRefreshListView;
 import com.heshicaihao.todayinformation.R;
-import com.heshicaihao.todayinformation.base.SuperActivity;
+import com.heshicaihao.todayinformation.base.BaseActivity;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
 import com.heshicaihao.todayinformation.bean.ArticleComment;
@@ -41,7 +41,7 @@ import com.heshicaihao.todayinformation.utils.MD5Utils;
  * 
  * @author heshicaihao 2015年5月21日
  */
-public class PhoneTechCommentActivity extends SuperActivity {
+public class PhoneTechCommentActivity extends BaseActivity {
 	
 	private PullToRefreshListView mListView;
 	private ErrorHintView mErrorHintView;

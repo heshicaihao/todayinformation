@@ -22,7 +22,7 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.heshicaihao.todayinformation.R;
-import com.heshicaihao.todayinformation.base.SuperActivity;
+import com.heshicaihao.todayinformation.base.BaseActivity;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
 import com.heshicaihao.todayinformation.bean.ArticleItem;
@@ -40,7 +40,7 @@ import com.heshicaihao.todayinformation.utils.MD5Utils;
  * 
  * @author heshicaihao 2015年5月18日
  */
-public class PhoneTechDetailActivity extends SuperActivity implements OnClickListener{
+public class PhoneTechDetailActivity extends BaseActivity implements OnClickListener{
 	
 	private TextView mTitle;
 	private TextView mDate;
